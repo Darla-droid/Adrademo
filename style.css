@@ -929,168 +929,104 @@ input, textarea, select { font-family: inherit; }
   .timeline-track { display: none; }
 }
 
-/* ===========================
-   MOBILE RESPONSIVE
-=========================== */
+@media (max-width:768px){
 
-@media screen and (max-width:768px){
+  .nav-links,
+  .btn-nav{
+      display:none;
+  }
 
-    .container{
-        width:min(92%,1200px);
-    }
+  .mobile-toggle{
+      display:flex;
+  }
 
-    /* ---------- Navbar ---------- */
+  .mobile-menu{
+      display:flex;
+  }
 
-    .nav{
-        padding:18px 0;
-    }
+  .container{
+      padding:0 16px;
+  }
 
-    .nav-links{
-        display:none;
-    }
+  .hero{
+      padding:180px 0 80px;
+  }
 
-    .nav-actions{
-        display:none;
-    }
+  .hero-inner{
+      grid-template-columns:1fr;
+      text-align:center;
+      gap:60px;
+  }
 
-    .menu-toggle{
-        display:flex;
-    }
+  .hero-sub{
+      max-width:100%;
+  }
 
-    .mobile-menu{
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:#0c0d13;
-        display:flex;
-        flex-direction:column;
-        padding:20px;
-        gap:18px;
+  .hero-actions{
+      justify-content:center;
+  }
 
-        max-height:0;
-        overflow:hidden;
+  .hero-visual{
+      height:360px;
+  }
 
-        transition:max-height .35s ease;
-        border-top:1px solid rgba(255,255,255,.08);
-        z-index:999;
-    }
+  .floating-card{
+      transform:scale(.75);
+      transform-origin:center;
+  }
 
-    .mobile-menu.active{
-        max-height:400px;
-    }
+  .card-1{
+      right:0;
+      top:0;
+      width:220px;
+  }
 
-    /* ---------- Hero ---------- */
+  .card-2{
+      left:0;
+      bottom:10px;
+      width:200px;
+  }
 
-    .hero{
-        padding-top:120px;
-        padding-bottom:80px;
-    }
+  .card-3{
+      right:20px;
+      top:200px;
+      font-size:12px;
+  }
 
-    .hero-inner{
-        display:flex;
-        flex-direction:column;
-        gap:70px;
-        align-items:center;
-    }
+  .stats-grid{
+      grid-template-columns:repeat(2,1fr);
+      gap:24px;
+  }
 
-    .hero-copy{
-        width:100%;
-        text-align:center;
-    }
+  .services-grid,
+  .portfolio-grid,
+  .testimonial-grid,
+  .form-row{
+      grid-template-columns:1fr;
+  }
 
-    .eyebrow{
-        justify-content:center;
-    }
+  .tech-grid{
+      grid-template-columns:repeat(2,1fr);
+  }
 
-    .hero-title{
-        font-size:48px;
-        line-height:1.08;
-    }
+  .timeline{
+      grid-template-columns:1fr;
+  }
 
-    .hero-sub{
-        max-width:100%;
-        font-size:18px;
-    }
+  .contact-card{
+      padding:24px;
+  }
 
-    .hero-actions{
-        display:flex;
-        flex-direction:column;
-        gap:16px;
-        width:100%;
-    }
+  .section{
+      padding:80px 0;
+  }
 
-    .hero-actions .btn{
-        width:100%;
-        justify-content:center;
-    }
+  .footer-inner{
+      grid-template-columns:1fr;
+      padding:56px 24px 32px;
+  }
 
-    /* ---------- Right Graphic ---------- */
-
-    .hero-visual{
-        position:relative;
-        width:100%;
-        height:720px;
-    }
-
-    .hero-glow{
-        width:340px;
-        height:340px;
-
-        left:50%;
-        transform:translateX(-50%);
-    }
-
-    .floating-card{
-
-        position:absolute;
-
-        width:min(320px,90%);
-
-        left:50%;
-
-        transform:translateX(-50%);
-    }
-
-    .card-1 {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-}
-
-.card-2 {
-    position: absolute;
-    left: 0;
-    bottom: 50px;
-}
-
-.card-3 {
-    position: absolute;
-    top: 260px;
-    right: 70px;
-}
-    /* ---------- Sections ---------- */
-
-    .services-grid,
-    .portfolio-grid,
-    .process-grid,
-    .contact-grid,
-    .footer-grid{
-
-        display:grid;
-        grid-template-columns:1fr;
-    }
-
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .section{
-        padding:80px 0;
-    }
-
-    .section-title{
-        font-size:36px;
-    }
-
+  .cursor-glow{
+      display:none;
+  }
 }
