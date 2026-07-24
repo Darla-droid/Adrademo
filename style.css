@@ -720,15 +720,32 @@ input, textarea, select { font-family: inherit; }
 
 @media (max-width:768px){
 
-.card1,
-.card2,
-.card3{
-    position:relative;
-    top:auto;
-    left:auto;
-    right:auto;
-    bottom:auto;
-    margin:20px auto;
+.hero-inner{
+    grid-template-columns:1fr;
 }
 
+.hero-visual{
+    height:650px;
+    margin-top:50px;
+}
+
+.card-1{
+    top:0;
+    left:50%;
+    right:auto;
+    transform:translateX(-50%);
+}
+
+.card-3{
+    top:240px;
+    left:50%;
+    right:auto;
+    transform:translateX(-50%);
+}
+
+.card-2{
+    top:420px;
+    left:50%;
+    bottom:auto;
+    transform:translateX(-50%);
 }
