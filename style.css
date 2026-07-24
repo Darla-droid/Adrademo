@@ -822,7 +822,7 @@ input, textarea, select { font-family: inherit; }
     position: static;       /* Removes absolute positioning */
     width: min(340px, 92vw);
     min-height: 120px;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     transform: none;
 }
