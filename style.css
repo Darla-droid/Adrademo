@@ -976,22 +976,17 @@ input, textarea, select { font-family: inherit; }
   }
 
   .card-1{
-      right:0;
-      top:0;
-      width:220px;
-  }
+    width:340px;
+}
 
-  .card-2{
-      left:0;
-      bottom:10px;
-      width:200px;
-  }
+.card-2{
+    width:320px;
+}
 
-  .card-3{
-      right:20px;
-      top:200px;
-      font-size:12px;
-  }
+.card-3{
+    padding:18px 26px;
+    font-size:16px;
+}
 
   .stats-grid{
       grid-template-columns:repeat(2,1fr);
