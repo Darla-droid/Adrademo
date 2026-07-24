@@ -976,19 +976,19 @@ input, textarea, select { font-family: inherit; }
   }
 
   .card-1{
-      right:50%;
+      right:0;
       top:0;
       width:220px;
   }
 
   .card-2{
-      left:50%;
+      left:0;
       bottom:10px;
       width:200px;
   }
 
   .card-3{
-      right:50%;
+      right:20px;
       top:200px;
       font-size:12px;
   }
