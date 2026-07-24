@@ -811,27 +811,24 @@ input, textarea, select { font-family: inherit; }
     height: 420px;
   }
 
-  .floating-card {
-    width: 300px;
-    box-sizing: border-box;
-    padding: 20px;
-}
-
 .card-1 {
     top: 0;
     left: 50%;
+    right: 50%;
     transform: translateX(-50%);
 }
 
 .card-2 {
     top: 160px;
     left: 50%;
+    right: 50%;
     transform: translateX(-50%);
 }
 
 .card-3 {
     top: 320px;
     left: 50%;
+    right: 50%;
     transform: translateX(-50%);
     font-size: 14px;
 }
