@@ -948,10 +948,6 @@ input, textarea, select { font-family: inherit; }
       padding:0 16px;
   }
 
-  .hero {
-    background: red !important;
-}
-
   .hero{
       padding:180px 0 80px;
   }
