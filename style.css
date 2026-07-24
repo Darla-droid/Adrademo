@@ -813,7 +813,7 @@ input, textarea, select { font-family: inherit; }
 
   .floating-card {
     position: absolute;
-    transform: scale(.9);
+    transform: scale(.6);
   }
 
   .card-1 {
@@ -823,15 +823,16 @@ input, textarea, select { font-family: inherit; }
   }
 
   .card-2 {
-    width: 260px;
+    width: 300px;
     left: 10px;
     bottom: 40px;
   }
 
   .card-3 {
     top: 210px;
+    width: 300px;
     right: 20px;
-    padding: 14px 20px;
+    padding: 14px 14px;
     font-size: 14px;
   }
 
