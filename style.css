@@ -812,30 +812,27 @@ input, textarea, select { font-family: inherit; }
   }
 
   .floating-card {
-    position: absolute;
-    transform: scale(.6);
-  }
-
-  .card-1,
-.card-2,
-.card-3 {
     width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .card-1 {
     top: 0;
-    right: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card-2 {
-    left: 10px;
-    bottom: 40px;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card-3 {
-    top: 210px;
-    right: 20px;
-    padding: 16px 20px;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 14px;
 }
   /* GRIDS */
