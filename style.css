@@ -1,7 +1,14 @@
 /* =========================================================
    ADRA — Enterprise Software Engineering
    ========================================================= */
-
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
+*{
+    box-sizing:border-box;
+}
 :root {
   --bg-primary: #07070A;
   --bg-secondary: #101016;
@@ -945,12 +952,19 @@ input, textarea, select { font-family: inherit; }
   }
 
   .container{
-      padding:0 16px;
-  }
+    width:100%;
+    max-width:100%;
+    padding:0 20px;
+}
 
   .hero{
-      padding:180px 0 80px;
-  }
+    padding:220px 0 80px;
+}
+
+.hero-title{
+    font-size:clamp(42px,10vw,64px);
+    line-height:1.05;
+}
 
   .hero-inner{
       grid-template-columns:1fr;
@@ -969,6 +983,16 @@ input, textarea, select { font-family: inherit; }
   .hero-visual{
       height:360px;
   }
+
+  .hero-actions{
+    width:100%;
+}
+
+.hero-actions .btn{
+    width:100%;
+    max-width:340px;
+    margin:auto;
+}
 
   .floating-card{
       transform:scale(.75);
