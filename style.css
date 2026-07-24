@@ -720,11 +720,11 @@ input, textarea, select { font-family: inherit; }
 
 @media (max-width: 768px) {
   .nav-links, .btn-nav { display: none; }
-  .mobile-toggle { display: flex; }
+  .mobile-toggle { display: none; }
   .mobile-menu { display: flex; }
 
   .hero { padding: 150px 0 90px; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .stats-grid { grid-template-columns: repeat(1, 1fr); gap: 32px; }
   .services-grid { grid-template-columns: 1fr; }
   .portfolio-grid { grid-template-columns: 1fr; }
   .testimonial-grid { grid-template-columns: 1fr; }
