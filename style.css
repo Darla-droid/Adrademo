@@ -816,26 +816,28 @@ input, textarea, select { font-family: inherit; }
     transform: scale(.6);
   }
 
-  .card-1 {
+  .card-1,
+.card-2,
+.card-3 {
     width: 300px;
+}
+
+.card-1 {
     top: 0;
     right: 10px;
-  }
+}
 
-  .card-2 {
-    width: 300px;
+.card-2 {
     left: 10px;
     bottom: 40px;
-  }
+}
 
-  .card-3 {
+.card-3 {
     top: 210px;
-    width: 300px;
     right: 20px;
-    padding: 14px 14px;
+    padding: 16px 20px;
     font-size: 14px;
-  }
-
+}
   /* GRIDS */
 
   .stats-grid,
