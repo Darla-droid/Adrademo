@@ -806,28 +806,44 @@ input, textarea, select { font-family: inherit; }
 
   /* VISUAL */
 
-  .hero-visual {
-    position: relative;
-    height: 420px;
-  }
-
-.card-1 {
-    top: 0;
-    left: 50%;
-    right: 50%;
+ /* Hero visual container */
+.hero-visual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;              /* Equal spacing between cards */
+    height: auto;
+    margin-top: 30px;
 }
 
-.card-2 {
-    top: 160px;
-    left: 50%;
-    right: 50%;
+/* All cards */
+.floating-card{
+    position: static;       /* Removes absolute positioning */
+    width: min(340px, 92vw);
+    min-height: 120px;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: none;
 }
 
-.card-3 {
-    top: 320px;
-    left: 50%;
-    right: 50%;
-    font-size: 14px;
+/* Remove all individual positioning */
+.card-1,
+.card-2,
+.card-3{
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    transform: none;
+}
+
+/* Optional: make card 3 match the others */
+.card-3{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
 }
   /* GRIDS */
 
